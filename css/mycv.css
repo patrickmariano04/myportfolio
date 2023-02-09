@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+
+
+   body {
+    position: relative;
+   }
+
+.background-img {
+    background: url("/assets/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+
+nav {
+  padding: 1rem 2rem;
+  position: fixed;
+  min-width: 100%;
+background: rgba(243, 110, 110, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.1px);
+-webkit-backdrop-filter: blur(11.1px);
+}
+nav .nav__items {
+  display: flex;
+  gap: 1em;
+
+ 
+  
+}
+
+nav .nav__items li:hover{
+
+  color: white;
+
+}
+nav .nav__items li:first-child {
+  margin-left: auto;
+}
+
+nav .nav__items li:hover {
+   transition: all .5s ease-in-out;
+  transform:scale(1.2);
+  color: rgba(247, 115, 247, 0.785);
+}
+
+.hero {
+  display: grid;
+  padding: 25rem 5rem;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 1.5rem;
+}
+
+
+.about{
+    background: url(/assets/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 15rem 20rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+}
+.about__title {
+  margin-top: -15rem;
+  text-align: center;
+  color: black;
+  display: grid;
+  padding: 6rem;
+  font-size: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img {
+  height: auto;
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.about__description{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.pic{
+  width: 40vh;
+  border-radius: 5%;
+  margin-top: 3rem;
+  margin-left:55rem;
+}
+
+
+.button {
+  background-color: rgba(240, 51, 196, 0.708); 
+  border: rgba(221, 160, 221, 0.866);
+  border-radius: 3vw;
+  color: white;
+  padding: 15px 10px;
+
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgba(0, 242, 255, 0.708);
+  color: black;
+  transform: translateY(-.2rem);
+}
+
+.skills{
+  background-image: url(/assets/bg-skills.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+
+}
+
+.pics{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pics img{
+  height: auto;
+  width: 20%;
+}
+.pics div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills:target{
+  scroll-margin-top: -1rem;
+}
+.skillstitle {
+  padding: 5%;
+  font-size: 4rem;
+}
+.pics div img:nth-child(3){
+  width: 17.5rem;
+}
+
+
+.gallery {
+  background: url("/assets/bg-gallery.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.gallerytitle{
+  text-align: center;
+  color: black;
+  display: grid;
+  padding: 6rem;
+  font-size: 3rem;
+
+}
+
+.slider {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+    
+
+}
+
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+  border-radius: 1rem;
+}
+
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+  
+} 
+#img5:checked ~ .m5 {
+  margin-left: -400%;
+  
+} 
+.allimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
