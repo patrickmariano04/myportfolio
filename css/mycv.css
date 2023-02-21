@@ -19,15 +19,6 @@ html {
    body {
     position: relative;
    }
-
-.background-img {
-    background: url("/assets/bg-img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 100vh;
-}
-
-
 nav {
   padding: 1rem 2rem;
   position: fixed;
@@ -71,10 +62,7 @@ nav .nav__items li:hover {
 
 
 .about{
-    background: url(/assets/bg-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    
     padding: 15rem 20rem;
     display: grid;
     gap: 1rem;
@@ -140,13 +128,6 @@ nav .nav__items li:hover {
   transform: translateY(-.2rem);
 }
 
-.skills{
-  background-image: url(/assets/bg-skills.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 110vh;
-
-}
 
 .pics{
   min-height: 100vh;
@@ -174,13 +155,6 @@ nav .nav__items li:hover {
   width: 17.5rem;
 }
 
-
-.gallery {
-  background: url("/assets/bg-gallery.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
 
 .gallerytitle{
   text-align: center;
